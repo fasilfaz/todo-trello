@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My TODO</title>
+</head>
+<body>
+    <div class="main-content">
+
+        <div class="container">
+            <h1>Task Management</h1>
+            <input id="addTodoListInput" type="text" placeholder="New Task" class="comment">
+            <button id="addTodoListButton" class="btn-save">Add Task List</button>
+    
+        </div>
+        <div id="root" class="root"></div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2>Edit Task</h2>
+            <textarea id="descriptionInput" placeholder="Add a description..." class="comment"></textarea>
+            <textarea id="commentsInput" placeholder="Add a comment..." class="comment"></textarea>
+            <button id="savePopupButton" class="btn-save">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

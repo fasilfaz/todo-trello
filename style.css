@@ -1,0 +1,160 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #E2F1E7;
+}
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 800px;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.comment {
+    /* width: calc(100% - 120px); */
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color:#E2F1E7;
+    border-radius: 8px;
+    border: 1px solid #387478;
+}
+
+.btn-save {
+    padding: 10px 20px;
+    background-color: #243642 ;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+#savePopupButton{
+    margin-right: 0px !important;
+}
+
+.root {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.todoList {
+    width: 28%;
+    padding: 15px;
+    background-color:#629584;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+h2 {
+    margin-top: 0;
+    color: black;
+}
+
+.card {
+    background-color: #387478;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: grab;
+    margin-right: 10px;
+}
+
+.card button {
+    background: none;
+    border: none;
+    color: #243642;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.menuContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.comment {
+    width: 100%;
+    margin-top: 10px;
+    color:black;
+}
+::placeholder{
+    color: black;
+}
+
+.menu button {
+    margin-top: 10px;
+}
+/* Same styles as before... */
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #629584;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
